@@ -2,58 +2,58 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login Sistem Penggajian</title>
 
 <style>
 body{
-    font-family:Arial, sans-serif;
-    background:#3498db;
     margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#4CAF50;
 }
 
 .login-box{
     width:350px;
-    margin:60px auto;
-    background:white;
+    margin:80px auto;
+    background:#fff;
     padding:20px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.3);
-    text-align:center;
 }
 
-h2,h3{
+h2{
+    text-align:center;
     color:#333;
 }
 
 input{
-    width:95%;
+    width:100%;
     padding:10px;
-    margin:8px 0;
+    margin:10px 0;
     border:1px solid #ccc;
     border-radius:5px;
+    box-sizing:border-box;
 }
 
 button{
     width:100%;
     padding:10px;
-    background:#2ecc71;
+    background:#4CAF50;
     color:white;
     border:none;
     border-radius:5px;
     cursor:pointer;
+    font-size:16px;
 }
 
 button:hover{
-    background:#27ae60;
+    background:#45a049;
 }
 
 #pesan{
+    text-align:center;
     color:red;
-    font-weight:bold;
-}
-
-#hasilKas{
-    color:blue;
 }
 </style>
 
@@ -64,13 +64,14 @@ button:hover{
 
 <h2>LOGIN</h2>
 
-<input type="text" id="username" placeholder="Username">
+<input type="text" id="username" placeholder="Masukkan Username">
 
-<input type="password" id="password" placeholder="Password">
+<input type="password" id="password" placeholder="Masukkan Password">
 
 <button onclick="login()">Login</button>
 
 <p id="pesan"></p>
+
 </div>
 
 <script src="script.js"></script>
