@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Sistem Penggajian</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#4CAF50;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    margin:20px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#4CAF50;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+button{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkred;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Dashboard Sistem Penggajian</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Data Karyawan</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Jabatan</th>
+                <th>Alamat</th>
+            </tr>
+
+            <tr>
+                <td>K001</td>
+                <td>Andi</td>
+                <td>Manager</td>
+                <td>Medan</td>
+            </tr>
+
+            <tr>
+                <td>K002</td>
+                <td>Budi</td>
+                <td>Staff</td>
+                <td>Binjai</td>
+            </tr>
+
+            <tr>
+                <td>K003</td>
+                <td>Siti</td>
+                <td>Admin</td>
+                <td>Tebing Tinggi</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Data Penggajian</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Gaji Pokok</th>
+                <th>Tunjangan</th>
+                <th>Total Gaji</th>
+            </tr>
+
+            <tr>
+                <td>K001</td>
+                <td>Andi</td>
+                <td>Rp8.000.000</td>
+                <td>Rp2.000.000</td>
+                <td>Rp10.000.000</td>
+            </tr>
+
+            <tr>
+                <td>K002</td>
+                <td>Budi</td>
+                <td>Rp5.000.000</td>
+                <td>Rp1.000.000</td>
+                <td>Rp6.000.000</td>
+            </tr>
+
+            <tr>
+                <td>K003</td>
+                <td>Siti</td>
+                <td>Rp4.500.000</td>
+                <td>Rp500.000</td>
+                <td>Rp5.000.000</td>
+            </tr>
+        </table>
+    </div>
+
+    <button onclick="window.location.href='index.html'">Logout</button>
+
+</div>
+
+</body>
+</html>
