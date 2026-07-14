@@ -16,8 +16,7 @@ function tambahData() {
     baris.insertCell(1).innerHTML = nama;
     baris.insertCell(2).innerHTML = jabatan;
     baris.insertCell(3).innerHTML =
-        "<button onclick='tambahData()'>Tambah</button> " 
-        "<button onclick='editData(this)'>Edit</button> " +
+                "<button onclick='editData(this)'>Edit</button> " +
         "<button onclick='hapusData(this)'>Hapus</button>";
 
     document.getElementById("id").value = "";
