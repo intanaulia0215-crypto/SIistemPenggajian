@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Data Penggajian</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+    margin:20px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:#2e7d32;
+}
+
+input{
+    padding:10px;
+    margin:5px;
+    width:180px;
+}
+
+button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th{
+    background:#2e7d32;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Data Penggajian</h2>
+
+<input type="text" id="id" placeholder="ID Karyawan">
+<input type="text" id="nama" placeholder="Nama Karyawan">
+<input type="number" id="gaji" placeholder="Gaji Pokok">
+<input type="number" id="tunjangan" placeholder="Tunjangan">
+
+<button onclick="tambahData()">Tambah</button>
+
+<br><br>
+
+<input type="text" id="cari" placeholder="Cari Nama" onkeyup="cariData()">
+
+<table id="tabel">
+
+<tr>
+<th>ID</th>
+<th>Nama</th>
+<th>Gaji Pokok</th>
+<th>Tunjangan</th>
+<th>Total Gaji</th>
+<th>Aksi</th>
+</tr>
+
+</table>
+
+</div>
+
+<script src="penggajian.js"></script>
+
+</body>
+</html>
