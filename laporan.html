@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Laporan Penggajian</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f2f2f2;
+    margin:20px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:#2e7d32;
+}
+
+button{
+    padding:10px 15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th{
+    background:#2e7d32;
+    color:white;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Laporan Penggajian</h2>
+
+<button onclick="window.print()">Cetak Laporan</button>
+<button onclick="window.location='dashboard.html'">Kembali</button>
+
+<table>
+
+<tr>
+<th>No</th>
+<th>ID Karyawan</th>
+<th>Nama</th>
+<th>Gaji Pokok</th>
+<th>Tunjangan</th>
+<th>Total Gaji</th>
+</tr>
+
+<!-- Data laporan akan ditampilkan di sini -->
+
+</table>
+
+</div>
+
+</body>
+</html>
